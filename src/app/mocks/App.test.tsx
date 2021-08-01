@@ -1,4 +1,3 @@
-import championsSlice, { DriverResultState } from "../store/championsSlice";
 import { render, fireEvent, screen, waitForElementToBeRemoved } from './test-utils'
 import App from '../../App'
 import {server, rest} from "./server"

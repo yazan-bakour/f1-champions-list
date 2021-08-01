@@ -1,31 +1,40 @@
+# Formula one champions list
+
+This app will display the data of seasons, race names, and the champions names.
+
+## Description
+
 This project is using TypeScript, and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+I created Store folder to store the API endpoints states into actions/reducers, and dispatch them in the view to only display the data. By following this store structure we will achive scaleable app with good design pattern.
 
-Check the package.json and run yarn if there's missing dependencies
-Install material ui => yarn add @material-ui/core
-instal material ui icons => yarn add @material-ui/icons
+I split the components inside Views to recieve the dispatch data independently and to have a better performance.
 
-In the project directory, you can run:
+### Dependencies & Scripts
 
-### `yarn start`
+* TypeScript.
+* Redux Tookit.
+* Material-UI.
+* Material-UI Icons.
+* msw 
+* axios
+* ...
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Excuting program
 
-### `yarn test`
+* To make sure all dependencies are installed
+```
+yarn
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* To start the project on localhost
+```
+yarn start
+```
 
-### `yarn build`
+* To test the program
+```
+yarn test
+```
 
-Builds the app for production to the `build` folder.
-
-## Files structure
-
-src
-└───app
-    ├───mocks //testing the project with jest
-    ├───store //storing every data from API into slices 
-    └───views //dispatch data from store and display 
+Please check the package.json and run yarn if there's missing dependencies
