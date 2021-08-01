@@ -2,6 +2,10 @@ This project is using TypeScript, and was bootstrapped with [Create React App](h
 
 ## Available Scripts
 
+Check the package.json and run yarn if there's missing dependencies
+Install material ui => yarn add @material-ui/core
+instal material ui icons => yarn add @material-ui/icons
+
 In the project directory, you can run:
 
 ### `yarn start`

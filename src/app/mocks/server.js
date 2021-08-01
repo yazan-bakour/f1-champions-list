@@ -1,7 +1,7 @@
 import { rest } from 'msw'
 import { setupServer } from 'msw/node'
 
-const handlers = [
+export const handlers = [
   //f1 season api test
   rest.get('http://ergast.com/api/f1/seasons.json', (req, res, ctx) => {
     return res(
