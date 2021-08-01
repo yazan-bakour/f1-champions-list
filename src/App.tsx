@@ -1,57 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
-
+import { Box, Container, makeStyles, createStyles, Theme } from '@material-ui/core';
+import Header from './app/views/Header';
+import Main from './app/views/Main'
+// ----------------------------------------------------------------------
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    listBackgroundColor: {
+      backgroundColor: 'rgba(225, 6, 0, 0.03)'
+    }
+  }),
+);
+// ----------------------------------------------------------------------
 function App() {
+  const classes = useStyles()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
+    <Box >
+      <Header />
+      <Container maxWidth='lg' className={classes.listBackgroundColor}>
+        <Main />
+      </Container>
+    </Box>
   );
 }
 
