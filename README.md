@@ -18,13 +18,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.
 
-##Files structure
-└───src
-    ├───mocks
-    ├───store //storing every data from API into slices 
-    └───views //dispatch data from store and display 
-
-Redux toolkit store
+## Files structure
 
 src
 └───app
